@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="2019ncov2019ncov,学名 新型冠状病毒。2019年末发现于武汉，尚且不知何因。第三批专家调研结束后政府下令封城以杜绝病毒传播，免费医疗杜绝百姓后顾之忧。随后各个省份派医疗队和物资前往武汉支援，于3月底结束战斗，逐步撤出武汉。后世界爆发，韩国，日本控制的好，意大利 美国严重，英国选择群体免疫。中国给予世界加倍援助。因病毒死亡中国人数3000 偏左。  小史公评:民间因手持 居民身份证，">
+<meta name="description" content="前言 Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording  Adapter – 适配器场景生活存在的场景: 无论城市，乡镇，农村 如果有心留意总会发现一个较 变压器 的玩意儿,变压器的功能主要是将高电压">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019ncov">
-<meta property="og:url" content="http://yoursite.com/2020/04/04/2019ncov/index.html">
+<meta property="og:title" content="Adapter">
+<meta property="og:url" content="http://yoursite.com/2020/08/18/adapter/index.html">
 <meta property="og:site_name" content="Heisenberg">
-<meta property="og:description" content="2019ncov2019ncov,学名 新型冠状病毒。2019年末发现于武汉，尚且不知何因。第三批专家调研结束后政府下令封城以杜绝病毒传播，免费医疗杜绝百姓后顾之忧。随后各个省份派医疗队和物资前往武汉支援，于3月底结束战斗，逐步撤出武汉。后世界爆发，韩国，日本控制的好，意大利 美国严重，英国选择群体免疫。中国给予世界加倍援助。因病毒死亡中国人数3000 偏左。  小史公评:民间因手持 居民身份证，">
-<meta property="article:published_time" content="2020-04-04T07:43:02.000Z">
-<meta property="article:modified_time" content="2020-04-04T08:10:53.648Z">
+<meta property="og:description" content="前言 Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording  Adapter – 适配器场景生活存在的场景: 无论城市，乡镇，农村 如果有心留意总会发现一个较 变压器 的玩意儿,变压器的功能主要是将高电压">
+<meta property="og:image" content="http://yoursite.com/.com//adapter1.png">
+<meta property="og:image" content="http://yoursite.com/.com//adapter3.png">
+<meta property="og:image" content="http://yoursite.com/.com//adapter5.png">
+<meta property="article:published_time" content="2020-08-18T02:07:51.000Z">
+<meta property="article:modified_time" content="2020-08-18T07:20:22.069Z">
 <meta property="article:author" content="Heisenberg">
-<meta property="article:tag" content="c">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="c++">
-<meta property="article:tag" content="unix">
+<meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/.com//adapter1.png">
 
 
 
@@ -122,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/04/04/2019ncov/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/08/18/adapter/"/>
 
 
 
 
 
-  <title>2019ncov | Heisenberg</title>
+  <title>Adapter | Heisenberg</title>
   
 
 
@@ -225,7 +226,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/04/2019ncov/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/18/adapter/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Heisenberg">
@@ -242,7 +243,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2019ncov</h1>
+          <h1 class="post-title" itemprop="name headline">Adapter</h1>
         
 
         <div class="post-meta">
@@ -254,8 +255,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-04T15:43:02+08:00">
-                2020-04-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-18T10:07:51+08:00">
+                2020-08-18
               </time>
             
 
@@ -277,8 +278,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B0%91%E9%97%B4%E5%B0%8F%E5%8F%B2/" itemprop="url" rel="index">
-                    <span itemprop="name">民间小史</span>
+                  <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
                   </a>
                 </span>
 
@@ -314,9 +315,37 @@
       
 
       
-        <h1 id="2019ncov"><a href="#2019ncov" class="headerlink" title="2019ncov"></a>2019ncov</h1><p><strong>2019ncov</strong>,学名 新型冠状病毒。2019年末发现于武汉，尚且不知何因。第三批专家调研结束后<br>政府下令封城以杜绝病毒传播，免费医疗杜绝百姓后顾之忧。随后各个省份派医疗队和物资前往武汉支援，<br>于3月底结束战斗，逐步撤出武汉。后世界爆发，韩国，日本控制的好，意大利 美国严重，英国选择群体免疫。<br>中国给予世界加倍援助。因病毒死亡中国人数3000 偏左。</p>
-<hr>
-<p>小史公评:<br>民间因手持 居民身份证，护照而炫富。<br>医护人员回家乡享最高礼节和荣誉。<br>网上武汉加油,湖北加油，现实行走较为艰辛。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording</p>
+</blockquote>
+<h1 id="Adapter-–-适配器"><a href="#Adapter-–-适配器" class="headerlink" title="Adapter – 适配器"></a>Adapter – 适配器</h1><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>生活存在的场景:</p>
+<p>无论城市，乡镇，农村 如果有心留意总会发现一个较 <code>变压器</code> 的玩意儿,变压器的功能主要是将高电压变为生活中所需要的电压，或者将低电压变为高电压方便远距离传输。</p>
+<blockquote>
+<p>  分析上面描述  存在两个需求问题</p>
+<ol>
+<li>高电压   –变压器–&gt;  低电压</li>
+<li>低电压   –变压器–&gt;  高电压</li>
+</ol>
+<p>进一步分析  把同一材料的几种状态(形态)进行转换，转换为需要的 需求</p>
+</blockquote>
+<h2 id="期望分析"><a href="#期望分析" class="headerlink" title="期望分析"></a>期望分析</h2><ol>
+<li>期望存在一个盒子 可以从把同一种 材料动作  从 A-&gt;B</li>
+<li>希望这个转换完毕的材料我可以直接使用</li>
+</ol>
+<p><img src="/.com//adapter1.png" alt="期望分析"></p>
+<p><img src="/.com//adapter3.png" alt="时序图"></p>
+<h2 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*  需要识别动作适配还是对象适配</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Target</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">dosth1</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">dosth2</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">interface</span>  <span class="title">Adaptee</span></span>&#123;</span><br><span class="line">    methodA();</span><br><span class="line">    methodB();</span><br><span class="line">    methodC();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Adapter</span> <span class="keyword">implements</span> <span class="title">Target</span></span>&#123; </span><br><span class="line">    <span class="keyword">private</span> Adaptee adaptee;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">dosth1</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">dosth2</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="/.com//adapter5.png" alt="期望分析"></p>
+<h2 id="总结分析"><a href="#总结分析" class="headerlink" title="总结分析"></a>总结分析</h2><blockquote>
+<ol>
+<li>确认那些会变化 那些不会变化 将不变化的优先沉淀下来，变化的留下接口 或抽象类 后续多态处理</li>
+<li>名词抽象类 动词 形容词 接口</li>
+<li>万物皆对象，对修改关闭 对扩展开放</li>
+<li>分清楚接口变化 还是动作变化</li>
+</ol>
+</blockquote>
 
       
     </div>
@@ -332,6 +361,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag"># 设计模式</a>
+          
+        </div>
+      
 
       
       
@@ -341,8 +376,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/04/04/mini-chat/" rel="next" title="mini 聊天工具">
-                <i class="fa fa-chevron-left"></i> mini 聊天工具
+              <a href="/2020/08/14/think/" rel="next" title="个人思考">
+                <i class="fa fa-chevron-left"></i> 个人思考
               </a>
             
           </div>
@@ -350,10 +385,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/08/14/think/" rel="prev" title="个人思考">
-                个人思考 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -485,7 +516,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2019ncov"><span class="nav-number">1.</span> <span class="nav-text">2019ncov</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Adapter-–-适配器"><span class="nav-number">2.</span> <span class="nav-text">Adapter – 适配器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#场景"><span class="nav-number">2.1.</span> <span class="nav-text">场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#期望分析"><span class="nav-number">2.2.</span> <span class="nav-text">期望分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪代码"><span class="nav-number">2.3.</span> <span class="nav-text">伪代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结分析"><span class="nav-number">2.4.</span> <span class="nav-text">总结分析</span></a></li></ol></li></ol></div>
             
 
           </div>
