@@ -79,18 +79,22 @@
 
 
 
-<meta name="description" content="PEACE &amp; LOVE">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Heisenberg">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="前言 Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording  Template Method – 模版模式解释 Template Method 带有模版功能的模式，组成模版的方式被定义在父类中，只查看父类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Template Method">
+<meta property="og:url" content="http://yoursite.com/2020/08/19/template-method/index.html">
 <meta property="og:site_name" content="Heisenberg">
-<meta property="og:description" content="PEACE &amp; LOVE">
+<meta property="og:description" content="前言 Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording  Template Method – 模版模式解释 Template Method 带有模版功能的模式，组成模版的方式被定义在父类中，只查看父类">
+<meta property="og:image" content="http://yoursite.com/2020/08/19/template-method/template_method01.png">
+<meta property="article:published_time" content="2020-08-19T00:52:17.000Z">
+<meta property="article:modified_time" content="2020-08-19T01:23:03.955Z">
 <meta property="article:author" content="Heisenberg">
 <meta property="article:tag" content="c">
 <meta property="article:tag" content="java">
 <meta property="article:tag" content="c++">
 <meta property="article:tag" content="unix">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/08/19/template-method/template_method01.png">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/08/19/template-method/"/>
 
 
 
 
 
-  <title>归档 | Heisenberg</title>
+  <title>Template Method | Heisenberg</title>
   
 
 
@@ -145,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -209,222 +213,179 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/19/template-method/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Heisenberg">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Heisenberg">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Template Method</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-19T08:52:17+08:00">
+                2020-08-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="index">
+                    <span itemprop="name">设计模式</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/08/19/template-method/" itemprop="url">
-              
-                <span itemprop="name">Template Method</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-08-19T08:52:17+08:00"
-              content="2020-08-19" >
-          08-19
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/08/18/adapter/" itemprop="url">
-              
-                <span itemprop="name">Adapter</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-08-18T10:07:51+08:00"
-              content="2020-08-18" >
-          08-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/08/14/think/" itemprop="url">
-              
-                <span itemprop="name">个人思考</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-08-14T21:37:18+08:00"
-              content="2020-08-14" >
-          08-14
-        </time>
-      </div>
-
-    </header>
-  </article>
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording</p>
+</blockquote>
+<h1 id="Template-Method-–-模版模式"><a href="#Template-Method-–-模版模式" class="headerlink" title="Template Method – 模版模式"></a>Template Method – 模版模式</h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><blockquote>
+<p>Template Method 带有模版功能的模式，组成模版的方式被定义在父类中，只查看父类代码无法知道这些方法最终会进行何种处理，唯一知道的是如何调用这些方法！</p>
+</blockquote>
+<h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="/2020/08/19/template-method/template_method01.png" alt></p>
+<p><strong>调用例子</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">AbstractDisplay display1= <span class="keyword">new</span> CharDisplay();</span><br><span class="line"></span><br><span class="line">AbstractDisplay display2= <span class="keyword">new</span> StringDisplay();</span><br><span class="line"></span><br><span class="line">display1.display();</span><br><span class="line">display2.display();</span><br></pre></td></tr></table></figure>
 
 
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>模版方法模式理解起来还算简单</li>
+<li>需要明确的分析处理那些是变的，那些是不变的。变与不变的是对象还是动作，该模式下明显不变的动作，变化的是具体实现</li>
+<li>万物皆对象，对修改关闭 对扩展开放。先把不变的确定下来，接下来对变化的进行多态处理</li>
+<li>该模式下是对动作结构的分析和处理</li>
+</ol>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/04/04/2019ncov/" itemprop="url">
-              
-                <span itemprop="name">2019ncov</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-04T15:43:02+08:00"
-              content="2020-04-04" >
-          04-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/04/04/mini-chat/" itemprop="url">
-              
-                <span itemprop="name">mini 聊天工具</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-04T12:18:17+08:00"
-              content="2020-04-04" >
-          04-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/08/18/adapter/" rel="next" title="Adapter">
+                <i class="fa fa-chevron-left"></i> Adapter
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -432,6 +393,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -452,8 +417,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -513,6 +487,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Template-Method-–-模版模式"><span class="nav-number">2.</span> <span class="nav-text">Template Method – 模版模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解释"><span class="nav-number">2.1.</span> <span class="nav-text">解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类图"><span class="nav-number">2.2.</span> <span class="nav-text">类图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -657,6 +647,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
