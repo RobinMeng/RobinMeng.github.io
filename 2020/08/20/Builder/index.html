@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>tags | Heisenberg</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="tags | Heisenberg">
+  <title>Builder | Heisenberg</title>
+  <meta name="keywords" content=" 设计模式 , 创建型 ">
+  <meta name="description" content="Builder | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -286,24 +286,33 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Builder" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">tags</h1>
+        <h1 class="article-title">Builder</h1>
     
     <div class="article-meta">
         
         
         
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">设计模式</a>
+            
+            <a class="color4">创建型</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-19 09:50:54'>2020-08-19 09:49</time>
+            发布时间 : <time class="date" title='最后更新: 2020-08-20 10:40:34'>2020-08-20 08:59</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:0</span>
+        <span>字数:401</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -322,7 +331,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Builder-–-创建者模式"><span class="toc-text">Builder – 创建者模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#解释"><span class="toc-text">解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用例场景"><span class="toc-text">用例场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类图"><span class="toc-text">类图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结分析"><span class="toc-text">总结分析</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -338,7 +347,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording</p>
+</blockquote>
+<h1 id="Builder-–-创建者模式"><a href="#Builder-–-创建者模式" class="headerlink" title="Builder – 创建者模式"></a>Builder – 创建者模式</h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><blockquote>
+<p>将一个复杂的对象的构建与它的表示分离，同样的构建过程可以创建不同的表示</p>
+<p>因复杂对象的构建会存在<code>变化的构建流程</code>,结果可以<code>相同也可以不同</code><br>因此将构建和表示分离，构建结果也可以分离</p>
+</blockquote>
+<h2 id="用例场景"><a href="#用例场景" class="headerlink" title="用例场景"></a>用例场景</h2><p><img src="/2020/08/20/Builder/builder01.png" alt></p>
+<p>期望可以调用任意一个构建模式去生产同一个商品，也可以调用同一个构建模式去生产同一系列不同的商品</p>
+<p><strong>根据用例分析模拟伪代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 调用者</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Client</span></span>&#123;</span><br><span class="line">    <span class="comment">// 根据不同的Builder模式 获得同一产品或不同产品</span></span><br><span class="line">    <span class="comment">// 根据相同的Builder模式 获取同一产品或不同产品</span></span><br><span class="line">    Product macPro = <span class="keyword">new</span> XXDirector(<span class="keyword">new</span> XXBuilder);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 抽象的构建者</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span>  <span class="title">Director</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function">Product <span class="title">build</span><span class="params">(Builder builder)</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 产品</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span>  <span class="title">Product</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*   工厂提供能力</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span>  <span class="title">Builder</span></span>&#123;</span><br><span class="line">    make1();</span><br><span class="line">    make2();</span><br><span class="line">    make3();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="/2020/08/20/Builder/builder02.png" alt></p>
+<h2 id="总结分析"><a href="#总结分析" class="headerlink" title="总结分析"></a>总结分析</h2><blockquote>
+<ol>
+<li>确认那些会变化 那些不会变化 将不变化的优先沉淀下来，变化的留下接口 或抽象类 后续多态处理</li>
+<li>名词抽象类 动词 形容词 接口</li>
+<li>万物皆对象，对修改关闭 对扩展开放</li>
+<li>分清楚接口变化 还是动作变化</li>
+<li>和Template method 的区别是 模版方法构建流程是固定的，而Builder 是不固定的 可以根据具体需求具体扩展</li>
+<li><code>发现变化</code>–&gt;<code>封装变化</code>–&gt; <code>使变化不变</code></li>
+</ol>
+</blockquote>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
     </div>
