@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://robinmeng.github.io/2020/08/20/polymorphism/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/2020/08/20/think/</loc>
     
     <lastmod>2020-08-20</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://robinmeng.github.io/2020/04/04/mini-chat/</loc>
-    
-    <lastmod>2020-08-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/2020/08/20/polymorphism/</loc>
     
     <lastmod>2020-08-20</lastmod>
     
@@ -102,20 +102,6 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/tags/%E5%A4%9A%E6%80%81/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/tags/%E4%BC%98%E9%9B%85coding/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://robinmeng.github.io/tags/C-C/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
@@ -124,6 +110,20 @@
   
   <url>
     <loc>https://robinmeng.github.io/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
+    <lastmod>2020-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robinmeng.github.io/tags/%E5%A4%9A%E6%80%81/</loc>
+    <lastmod>2020-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robinmeng.github.io/tags/%E4%BC%98%E9%9B%85coding/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -160,14 +160,14 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/BeautyCoding/</loc>
+    <loc>https://robinmeng.github.io/categories/mini/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/mini/</loc>
+    <loc>https://robinmeng.github.io/categories/BeautyCoding/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
