@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/08/20/Builder/</loc>
+    <loc>http://yoursite.com/2020/08/14/think/</loc>
     
     <lastmod>2020-08-20</lastmod>
     
@@ -16,7 +16,28 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/2020/04/04/mini-chat/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/20/Builder/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/08/18/adapter/</loc>
+    
+    <lastmod>2020-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/04/04/2019ncov/</loc>
     
     <lastmod>2020-08-20</lastmod>
     
@@ -40,27 +61,6 @@
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2020-08-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/04/04/2019ncov/</loc>
-    
-    <lastmod>2020-08-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/04/04/mini-chat/</loc>
-    
-    <lastmod>2020-08-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/08/14/think/</loc>
-    
-    <lastmod>2020-08-14</lastmod>
     
   </url>
   
@@ -95,20 +95,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/C-C/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
-    <lastmod>2020-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/%E5%90%90%E6%A7%BD/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
@@ -117,6 +103,20 @@
   
   <url>
     <loc>http://yoursite.com/tags/JAVA/</loc>
+    <lastmod>2020-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/C-C/</loc>
+    <lastmod>2020-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -139,14 +139,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/mini/</loc>
+    <loc>http://yoursite.com/categories/%E5%90%90%E6%A7%BD/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E5%90%90%E6%A7%BD/</loc>
+    <loc>http://yoursite.com/categories/mini/</loc>
     <lastmod>2020-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
