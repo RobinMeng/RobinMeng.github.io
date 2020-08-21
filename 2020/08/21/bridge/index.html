@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Template Method | Heisenberg</title>
+  <title>Bridge | Heisenberg</title>
 
   
-    <meta name="keywords" content="设计模式,模版方法模式,Template Method,行为型,c,java,c++,unix">
+    <meta name="keywords" content="设计模式,桥接模式,Bridge,结构型,组合,非继承,c,java,c++,unix">
     
 
   
-  <meta name="description" content="Template Method | Heisenberg">
+  <meta name="description" content="Bridge | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -343,9 +343,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-template-method" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-bridge" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Template Method</h1>
+        <h1 class="article-title">Bridge</h1>
     
     <div class="article-meta">
         
@@ -365,19 +365,19 @@
             
             <a class="color5">设计模式</a>
             
-            <a class="color4">行为型</a>
+            <a class="color4">结构型</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-08-20 14:38:48'>2020-08-19 08:52</time>
+            Created At : <time class="date" title='Updated At: 2020-08-21 11:37:04'>2020-08-21 10:03</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:232</span>
+        <span>Count:654</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -396,7 +396,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Template-Method-–-模版模式"><span class="toc-text">Template Method – 模版模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#解释"><span class="toc-text">解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#类图"><span class="toc-text">类图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Bridge-–-桥接模式"><span class="toc-text">Bridge – 桥接模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#解释"><span class="toc-text">解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#桥"><span class="toc-text">桥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伪代码-画画"><span class="toc-text">伪代码- 画画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UML-类图"><span class="toc-text">UML 类图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结分析"><span class="toc-text">总结分析</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -415,20 +415,50 @@
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 <p>Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording</p>
 </blockquote>
-<h1 id="Template-Method-–-模版模式"><a href="#Template-Method-–-模版模式" class="headerlink" title="Template Method – 模版模式"></a>Template Method – 模版模式</h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><blockquote>
-<p>Template Method 带有模版功能的模式，组成模版的方式被定义在父类中，只查看父类代码无法知道这些方法最终会进行何种处理，唯一知道的是如何调用这些方法！</p>
+<h1 id="Bridge-–-桥接模式"><a href="#Bridge-–-桥接模式" class="headerlink" title="Bridge – 桥接模式"></a>Bridge – 桥接模式</h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>Bridge 模式的作用将两样东西连接起来，分别是类的功能层次结构和类的实现层次结构</p>
+<blockquote>
+<p><code>类的功能层次结构</code>   业务上的功能结构 如继承，呈现多层级继承关系</p>
 </blockquote>
-<h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="/2020/08/19/template-method/template_method01.png" alt></p>
-<p><strong>调用例子</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">AbstractDisplay display1= <span class="keyword">new</span> CharDisplay();</span><br><span class="line"></span><br><span class="line">AbstractDisplay display2= <span class="keyword">new</span> StringDisplay();</span><br><span class="line"></span><br><span class="line">display1.display();</span><br><span class="line">display2.display();</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
-<li>模版方法模式理解起来还算简单</li>
-<li>需要明确的分析处理那些是变的，那些是不变的。变与不变的是对象还是动作，该模式下明显不变的动作，变化的是具体实现</li>
-<li>万物皆对象，对修改关闭 对扩展开放。先把不变的确定下来，接下来对变化的进行多态处理</li>
-<li>该模式下是对动作结构的分析和处理</li>
+<blockquote>
+<p><code>类的实现层次结构</code>   实现上的代码结构 尽可能按抽象 或 不必和类的功能完全保持一致</p>
+</blockquote>
+<blockquote>
+<p><code>桥接</code> 使用组合方式代替多层继承关系，强关系变为若关系</p>
+</blockquote>
+<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p><strong>画画</strong></p>
+<p>形状上–&gt;我们可以画长方形，正方形，圆形 等</p>
+<p>颜色上–&gt;我们可以图上红橙黄绿青蓝紫 等</p>
+<p>签名上–&gt;我们可以用楷书，行书，草书 等</p>
+<p>盖章 –&gt; 专用章,个人章，文化章等</p>
+<p>以上多个纬度各种排列组合画出一个图画！！</p>
+<ol>
+<li>功能上是可以继承的 最终得到一幅画，但显然有点太不可思议，类太多</li>
+<li>而且这种继承感觉怪怪的，因为这几个纬度没有说谁必须是最高类，最低类，关系比较平等</li>
 </ol>
+<h2 id="桥"><a href="#桥" class="headerlink" title="桥"></a>桥</h2><p>现实生活中桥的例子，几个不同纬度的事物因为有了桥而产生了关联，而不是强依赖，缺少其中的一个是，剩余的依然可以产生联系，这和继承就有很大的区别！！ 如果缺了桥 他们之间就彻底失去联系，想一起合作做点事情也是不可能的！！</p>
+<blockquote>
+<p>因为有了Bridge 其他几个独立纬度的事物可以在Bridge上留下 (<code>地址指针</code>,<code>钩子</code>,<code>引用</code>) 等其他乱码七糟的名次 其实都是一个意思 可以让桥和其他几个纬度上产生联系</p>
+</blockquote>
+<p><img src="/2020/08/21/bridge/bridge01.png" alt></p>
+<h2 id="伪代码-画画"><a href="#伪代码-画画" class="headerlink" title="伪代码- 画画"></a>伪代码- 画画</h2><ol>
+<li>形状纬度</li>
+<li>颜色纬度</li>
+<li>签名纬度</li>
+<li>盖章纬度</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 画画的桥</span></span><br><span class="line"><span class="comment"> * Shape , Color,Sign,Chapter 是不同的接口 钩子 具体由指向地址实现</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">DrawBridge</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 形状</span></span><br><span class="line">    Shape shape;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//颜色</span></span><br><span class="line">    Color color;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//签名</span></span><br><span class="line">    Sign sign;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//章</span></span><br><span class="line">    Chapter chapter;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">abstract</span> <span class="keyword">boolean</span> <span class="title">draw</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="UML-类图"><a href="#UML-类图" class="headerlink" title="UML 类图"></a>UML 类图</h2><p><img src="/2020/08/21/bridge/bridge02.png" alt></p>
+<h2 id="总结分析"><a href="#总结分析" class="headerlink" title="总结分析"></a>总结分析</h2><blockquote>
+<ol>
+<li>确认那些会变化 那些不会变化 将不变化的优先沉淀下来，变化的留下接口 或抽象类 后续多态处理</li>
+<li>名词抽象类 动词 形容词 接口</li>
+<li>万物皆对象，对修改关闭 对扩展开放</li>
+<li>分清楚接口变化 还是动作变化</li>
+<li><code>发现变化</code>–&gt;<code>封装变化</code>–&gt; <code>使变化不变</code></li>
+<li>理解模式本身含义并加以扩展</li>
+</ol>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
