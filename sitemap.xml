@@ -123,6 +123,13 @@
   </url>
   
   <url>
+    <loc>https://robinmeng.github.io/tags/C-C/</loc>
+    <lastmod>2020-08-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/tags/%E5%A4%9A%E6%80%81/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
@@ -131,13 +138,6 @@
   
   <url>
     <loc>https://robinmeng.github.io/tags/%E4%BC%98%E9%9B%85coding/</loc>
-    <lastmod>2020-08-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/tags/C-C/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -188,14 +188,14 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/BeautyCoding/</loc>
+    <loc>https://robinmeng.github.io/categories/mini/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/mini/</loc>
+    <loc>https://robinmeng.github.io/categories/BeautyCoding/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
