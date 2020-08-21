@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2019ncov | Heisenberg</title>
+  <title>错误代码 | Heisenberg</title>
 
   
-    <meta name="keywords" content="2019ncov,c,java,c++,unix">
+    <meta name="keywords" content="错误代码,c,java,c++,unix">
     
 
   
-  <meta name="description" content="2019ncov | Heisenberg">
+  <meta name="description" content="错误代码 | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -363,9 +363,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2019ncov" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-error-coding" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2019ncov</h1>
+        <h1 class="article-title">错误代码</h1>
     
     <div class="article-meta">
         
@@ -375,20 +375,27 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="民间小史">民间小史</a>
+            <a  data-rel="ErrorCoding">ErrorCoding</a>
             
         </span>
         
         
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">error coding</a>
+            
+        </span>
+        
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-20 11:09:48'>2020-04-04 15:43</time>
+            发布时间 : <time class="date" title='最后更新: 2020-08-21 15:32:34'>2020-08-21 15:17</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:193</span>
+        <span>字数:297</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -407,7 +414,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2019ncov"><span class="toc-text">2019ncov</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#错误代码"><span class="toc-text">错误代码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2020年8月21日"><span class="toc-text">2020年8月21日</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#代码1"><span class="toc-text">代码1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#存在问题"><span class="toc-text">存在问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建议写法"><span class="toc-text">建议写法</span></a></li></ol></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -423,10 +430,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="2019ncov"><a href="#2019ncov" class="headerlink" title="2019ncov"></a>2019ncov</h1><p><strong>2019ncov</strong>,学名 新型冠状病毒。2019年末发现于武汉，尚且不知何因。第三批专家调研结束后<br>政府下令封城以杜绝病毒传播，免费医疗杜绝百姓后顾之忧。随后各个省份派医疗队和物资前往武汉支援，<br>于3月底结束战斗，逐步撤出武汉。后世界爆发，韩国，日本控制的好，意大利 美国严重，英国选择群体免疫。<br>中国给予世界加倍援助。因病毒死亡中国人数3000 偏左。</p>
-<hr>
-<p>小史公评:<br>民间因手持 居民身份证，护照而炫富。<br>医护人员回家乡享最高礼节和荣誉。<br>网上武汉加油,湖北加油，现实行走较为艰辛。</p>
+        <h1 id="错误代码"><a href="#错误代码" class="headerlink" title="错误代码"></a>错误代码</h1><p>📝<strong>在阅读网上代码的时候发现有的代码看起来很严谨，其实呢也是有些问题的，因此决定将他们记录下来，方面自己，方便他人</strong></p>
+<h2 id="2020年8月21日"><a href="#2020年8月21日" class="headerlink" title="2020年8月21日"></a>2020年8月21日</h2><h3 id="代码1"><a href="#代码1" class="headerlink" title="代码1"></a>代码1</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Filter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doFilter</span><span class="params">(Request request, Response response,FilterChain chain)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> Response <span class="title">request</span><span class="params">(Request request)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    Response response = <span class="keyword">new</span> Response();</span><br><span class="line">    FilterChain chain = <span class="keyword">new</span> FilterChain();</span><br><span class="line">    chain.addFilter(<span class="keyword">new</span> ParameterValidateFilter());</span><br><span class="line">    chain.addFilter(<span class="keyword">new</span> LogFilter());</span><br><span class="line">    chain.doFilter(request, response, chain);</span><br><span class="line">    <span class="keyword">return</span> response;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h4 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h4><p>这段代码的主要问题存在于方法上的压栈弹栈上，通常方法入参会拷贝一份参数的副本传递过去，方法栈上的参数信息是原参数的副本，对其修改也是修改的副本！因为没有 <code>return</code> 因此 无法再将副本的地址指向接受的地址，因此会出现问题！ 哪怕这么写现在Java上确实没啥问题，但是编译器或者其他稍微有点变更 就会出现问题！ 因此不建议这么做！</p>
+<h4 id="建议写法"><a href="#建议写法" class="headerlink" title="建议写法"></a>建议写法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Filter</span> </span>&#123;</span><br><span class="line">    <span class="function">Response <span class="title">doFilter</span><span class="params">(Request request, Response response,FilterChain chain)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> Response <span class="title">request</span><span class="params">(Request request)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    Response response = <span class="keyword">new</span> Response();</span><br><span class="line">    FilterChain chain = <span class="keyword">new</span> FilterChain();</span><br><span class="line">    chain.addFilter(<span class="keyword">new</span> ParameterValidateFilter());</span><br><span class="line">    chain.addFilter(<span class="keyword">new</span> LogFilter());</span><br><span class="line">    response = chain.doFilter(request, response, chain);</span><br><span class="line">    <span class="keyword">return</span> response;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
     </div>

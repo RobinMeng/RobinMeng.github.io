@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://robinmeng.github.io/2020/08/21/error-coding/</loc>
+    
+    <lastmod>2020-08-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/2020/08/21/bridge/</loc>
     
     <lastmod>2020-08-21</lastmod>
@@ -116,6 +123,13 @@
   </url>
   
   <url>
+    <loc>https://robinmeng.github.io/tags/error-coding/</loc>
+    <lastmod>2020-08-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/tags/%E6%9C%8D%E8%A3%85%E6%90%AD%E9%85%8D/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
@@ -167,6 +181,13 @@
 
   
   <url>
+    <loc>https://robinmeng.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2020-08-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/categories/%E6%B0%91%E9%97%B4%E5%B0%8F%E5%8F%B2/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
@@ -174,7 +195,7 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <loc>https://robinmeng.github.io/categories/ErrorCoding/</loc>
     <lastmod>2020-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
