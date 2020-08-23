@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>枚举多态 | Heisenberg</title>
+  <title>Decorator | Heisenberg</title>
 
   
-    <meta name="keywords" content="枚举多态,多态,枚举,策略,c,java,c++,unix">
+    <meta name="keywords" content="设计模式,装饰器模式,Decorator,结构形,c,java,c++,unix">
     
 
   
-  <meta name="description" content="枚举多态 | Heisenberg">
+  <meta name="description" content="Decorator | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -375,9 +375,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-polymorphism" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Decorator" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">枚举多态</h1>
+        <h1 class="article-title">Decorator</h1>
     
     <div class="article-meta">
         
@@ -387,7 +387,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="BeautyCoding">BeautyCoding</a>
+            <a  data-rel="设计模式">设计模式</a>
             
         </span>
         
@@ -395,21 +395,21 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">多态</a>
+            <a class="color5">设计模式</a>
             
-            <a class="color4">优雅coding</a>
+            <a class="color4">结构形</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-20 16:21:39'>2020-08-20 15:30</time>
+            发布时间 : <time class="date" title='最后更新: 2020-08-23 18:06:42'>2020-08-23 17:43</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:147</span>
+        <span>字数:200</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -428,7 +428,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#枚举多态😍"><span class="toc-text">枚举多态😍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Decorator-–-装饰器模式"><span class="toc-text">Decorator – 装饰器模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#解释"><span class="toc-text">解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用例"><span class="toc-text">用例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伪代码"><span class="toc-text">伪代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UML-类图"><span class="toc-text">UML 类图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -444,12 +444,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="枚举多态😍"><a href="#枚举多态😍" class="headerlink" title="枚举多态😍"></a>枚举多态😍</h1><p><strong>😍😍简易策略模式😍😍</strong></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
 <p>Recently, I seem to be a little enlightened on the design, understand its internal logic, and write some notes for recording</p>
 </blockquote>
-<p><strong>代码优雅写法</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> StrategyEnum &#123;</span><br><span class="line"></span><br><span class="line">	GANK(<span class="number">1</span>) &#123;</span><br><span class="line">		<span class="meta">@Override</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">apply</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">10000</span> + x + y;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	GROWTH(<span class="number">2</span>) &#123;</span><br><span class="line">		<span class="meta">@Override</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">apply</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">10000</span> + x * y;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	LATER(<span class="number">3</span>) &#123;</span><br><span class="line">		<span class="meta">@Override</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">apply</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">10000</span> - x * y;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 策略</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> strategy;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">int</span> <span class="title">apply</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"></span><br><span class="line">	StrategyEnum(<span class="keyword">int</span> strategy) &#123;</span><br><span class="line">		<span class="keyword">this</span>.strategy = strategy;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">super</span>.toString();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> code = StrategyEnum.GANK.apply(<span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">		System.out.println(code);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Decorator-–-装饰器模式"><a href="#Decorator-–-装饰器模式" class="headerlink" title="Decorator – 装饰器模式"></a>Decorator – 装饰器模式</h1><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><p>Decorator 装饰器模式，字面意思为将一个物件包装起来，使比原来更加好看些！更加多一块功能，在原有基础上增加一些功能</p>
+<h2 id="用例"><a href="#用例" class="headerlink" title="用例"></a>用例</h2><p><img src="/2020/08/23/Decorator/decorator01.png" alt></p>
+<ol>
+<li>人用光板手机，触发掉落，手机稀碎</li>
+<li>任用带着手机壳的手机，触发掉落，手机没那么稀碎</li>
+</ol>
+<h2 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">interface</span>  <span class="title">Mobile</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">pullOff</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">MobileShell</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MobileDecorator</span> <span class="keyword">implements</span> <span class="title">Mobile</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    Mobile mobile;</span><br><span class="line"></span><br><span class="line">    MobileShell shell;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">pullOff</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//可将源mobile的pullOff 动作中加入新的变量</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="UML-类图"><a href="#UML-类图" class="headerlink" title="UML 类图"></a>UML 类图</h2><p><img src="/2020/08/23/Decorator/decorator02.png" alt></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>继承 组合 和 内聚 是做什么的</li>
+<li>了解清晰该设计模式是干嘛地</li>
+<li>找到并变化点，封装变化点</li>
+</ol>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
     </div>
