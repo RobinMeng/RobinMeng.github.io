@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>404 | Heisenberg</title>
+  <title>应用层 | Heisenberg</title>
 
   
     <meta name="keywords" content="c,java,c++,unix">
     
 
   
-  <meta name="description" content="404 | Heisenberg">
+  <meta name="description" content="应用层 | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -423,24 +423,41 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-yyc" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">404</h1>
+        <h1 class="article-title">应用层</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="网络原理">网络原理</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">网络</a>
+            
+            <a class="color4">应用层</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-19 10:04:52'>2020-08-19 10:03</time>
+            发布时间 : <time class="date" title='最后更新: 2020-09-21 10:31:48'>2020-09-19 14:33</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1</span>
+        <span>字数:673</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -459,7 +476,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#域名系统"><span class="toc-text">域名系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Email"><span class="toc-text">Email</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#POP3-收发邮件过程"><span class="toc-text">POP3 收发邮件过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IMAP的断连工作方式"><span class="toc-text">IMAP的断连工作方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IMAP4的特点"><span class="toc-text">IMAP4的特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WWW"><span class="toc-text">WWW</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#远程登陆Telnet过程"><span class="toc-text">远程登陆Telnet过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#WWW-的工作过程"><span class="toc-text">WWW 的工作过程</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -475,16 +492,55 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>404</title>
-    <meta name="generator" content="Hexo 4.2.0"></head>
-    <body>
-        <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8"></script>
-    </body>
-</html>
+        <p><strong>什么是应用层</strong></p>
+<p>应用层是网络协议中的一层 最高的一层 基于传输层</p>
+<p><strong>应用层的知识结构</strong></p>
+<ol>
+<li>域名系统</li>
+<li>电子邮件</li>
+<li>万维网</li>
+<li>其他服务</li>
+</ol>
+<h2 id="域名系统"><a href="#域名系统" class="headerlink" title="域名系统"></a>域名系统</h2><ol>
+<li>IP地址由网络标识 和 主机标识 两部分组成</li>
+<li>域名分为 网络域名 和 主机域名</li>
+<li>我国将二级域名划分为 类别域名 和 行政区域域名</li>
+</ol>
+<h2 id="Email"><a href="#Email" class="headerlink" title="Email"></a>Email</h2><ol>
+<li>用户Email地址格式为 用户名@主机域名</li>
+<li>SMTP 服务器基于DNS中的邮件交换记录来路由电子邮件</li>
+<li>SMTP 通过用户代理程序 和 邮件传输代理 实现邮件传输</li>
+<li>IMAP 提供离线 在线 断开连接 三种工作方式<h3 id="POP3-收发邮件过程"><a href="#POP3-收发邮件过程" class="headerlink" title="POP3 收发邮件过程"></a>POP3 收发邮件过程</h3></li>
+<li>通过POP3 客户端程序登陆到支持POP3协议的邮件服务器，用户可以发送邮件及附件</li>
+<li>邮件服务器将该用户收存的邮件传递给POP3的客户群，使用户收到这些邮件，并将这些邮件从服务器上删除</li>
+<li>邮件服务器再将用户提交发送邮件，转发到运行SMTP协议的计算机中，通过它实现邮件的最终发送</li>
+</ol>
+<h3 id="IMAP的断连工作方式"><a href="#IMAP的断连工作方式" class="headerlink" title="IMAP的断连工作方式"></a>IMAP的断连工作方式</h3><ol>
+<li>断连是一种脱机与联机操作的混合模式</li>
+<li>客户机与邮件服务器建立连接，客户端邮件程序选取相关邮件，在本地生成告诉缓存，同时 选取的邮件仍保存在邮件服务器上</li>
+<li>断开与邮件服务器的连接，对客户机高速缓存进行脱机处理，再次连接时，进行同步处理使邮件状态相一致</li>
+</ol>
+<h3 id="IMAP4的特点"><a href="#IMAP4的特点" class="headerlink" title="IMAP4的特点"></a>IMAP4的特点</h3><ol>
+<li>提供离线 在线 断开三种工作方式</li>
+<li>支持 脱机 联机 和 断连操作</li>
+<li>用户可通过浏览器决定是否要下载 删除 检索信件的特定部分，还可以在服务器上修改创建文件夹或邮箱</li>
+</ol>
+<h2 id="WWW"><a href="#WWW" class="headerlink" title="WWW"></a>WWW</h2><ol>
+<li>www 采用的是C/S 工作模式</li>
+<li>URL 是统一资源定位符</li>
+</ol>
+<h3 id="远程登陆Telnet过程"><a href="#远程登陆Telnet过程" class="headerlink" title="远程登陆Telnet过程"></a>远程登陆Telnet过程</h3><ol>
+<li>本地启动Telnet客户端应用程序</li>
+<li>远程机器拥有Telnet 服务端程序</li>
+<li>客户端程序指定远程机器的名称，通过Internet 建立连接</li>
+<li>连接建立成功后就像访问本地计算机一样可以访问远程计算机资源</li>
+<li>退出后控制权回到本地计算机</li>
+</ol>
+<h3 id="WWW-的工作过程"><a href="#WWW-的工作过程" class="headerlink" title="WWW 的工作过程"></a>WWW 的工作过程</h3><ol>
+<li>客户端建立连接，用户通过浏览器向Web服务器发送浏览信息请求</li>
+<li>web服务器接收到请求，向浏览器返回请求信息</li>
+<li>关闭连接</li>
+</ol>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>

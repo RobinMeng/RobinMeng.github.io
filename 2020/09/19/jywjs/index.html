@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>404 | Heisenberg</title>
+  <title>局域网技术 | Heisenberg</title>
 
   
     <meta name="keywords" content="c,java,c++,unix">
     
 
   
-  <meta name="description" content="404 | Heisenberg">
+  <meta name="description" content="局域网技术 | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -423,24 +423,41 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-jywjs" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">404</h1>
+        <h1 class="article-title">局域网技术</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="网络原理">网络原理</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">网络</a>
+            
+            <a class="color4">局域网</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-19 10:04:52'>2020-08-19 10:03</time>
+            发布时间 : <time class="date" title='最后更新: 2020-09-21 09:55:34'>2020-09-19 12:21</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1</span>
+        <span>字数:645</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -459,7 +476,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#介质访问控制"><span class="toc-text">介质访问控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#简述时分ALOHA-基本思想-–-介质有冲突控制协议"><span class="toc-text">简述时分ALOHA 基本思想  – 介质有冲突控制协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#简述二进制退避算法"><span class="toc-text">简述二进制退避算法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IEEE-与局域网"><span class="toc-text">IEEE 与局域网</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#令牌环操作过程"><span class="toc-text">令牌环操作过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#令牌环介质访问控制功能"><span class="toc-text">令牌环介质访问控制功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#局域网技术"><span class="toc-text">局域网技术</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -475,17 +492,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>404</title>
-    <meta name="generator" content="Hexo 4.2.0"></head>
-    <body>
-        <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8"></script>
-    </body>
-</html>
-
+        <p><strong>局域网技术</strong></p>
+<h2 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h2><pre><code>1. 信道访问权分配 静态分配 动态分配
+2. 介质访问控制协议 争用协议 无冲突协议 有限争用协议</code></pre><h3 id="简述时分ALOHA-基本思想-–-介质有冲突控制协议"><a href="#简述时分ALOHA-基本思想-–-介质有冲突控制协议" class="headerlink" title="简述时分ALOHA 基本思想  – 介质有冲突控制协议"></a>简述时分ALOHA 基本思想  – 介质有冲突控制协议</h3><pre><code>1. 将时间分成等长间隙 每个间隙可以发送一个帧
+2. 用户有数据帧发送时 不论帧在何时产生 必须等到下一个时隙才能发送
+3. 用户通过监听信道来获知是否产生冲突，数据传输是否成功，若发现失败等待若干间隙后重新发送</code></pre><h3 id="简述二进制退避算法"><a href="#简述二进制退避算法" class="headerlink" title="简述二进制退避算法"></a>简述二进制退避算法</h3><pre><code>1. 对每个数据帧，当第一次发生冲突时 设置一个参量L=2
+2. 退避取1到L个时间片中的一个随机数
+3. 当数据帧再次发生冲突时，L翻倍
+4. 设置一个最大的重传次数，超过次数不再重传，并报告错误</code></pre><h2 id="IEEE-与局域网"><a href="#IEEE-与局域网" class="headerlink" title="IEEE 与局域网"></a>IEEE 与局域网</h2><pre><code>1. 预约是各个网络节点首先声明自己有数据要发送，然后根据声明的顺序获得信道的使用权来发送数据
+2. 网络负载 是指单位帧时内系统发送所有数据帧的平均数量
+3. 吞吐量 指单位帧内系统成功发送新产生的数据帧的平均数量
+4. 在FDDI环网中采用弹性缓冲器来消除时钟偏移现象
+5. IEEE MAC帧的起始界定 10101011</code></pre><h3 id="令牌环操作过程"><a href="#令牌环操作过程" class="headerlink" title="令牌环操作过程"></a>令牌环操作过程</h3><pre><code>1. 网络空闲时 只有一个令牌在环路上绕行
+2. 当一个站点要发送数据时，必须等待并获取一个令牌，将令牌标志为1，随后发送数据
+3. 环路上的每个站点边转发数据，边检测数据帧中的目的地址，若为本站地址读取携带的数据
+4. 数据帧环绕一周返回时，发送站将其从环路上撤销，同时根据返回的有关信息确定数据是否出错。若有错重发存于缓冲区中的待确认帧，否则释放缓冲区中的待确认帧
+5. 发送站点完成数据发送后，重新产生一个令牌传至下一个站点，以便其他站点使用</code></pre><h3 id="令牌环介质访问控制功能"><a href="#令牌环介质访问控制功能" class="headerlink" title="令牌环介质访问控制功能"></a>令牌环介质访问控制功能</h3><ol>
+<li>帧发送</li>
+<li>令牌发送</li>
+<li>帧接受</li>
+<li>优先权选择   </li>
+</ol>
+<h2 id="局域网技术"><a href="#局域网技术" class="headerlink" title="局域网技术"></a>局域网技术</h2><pre><code>1. 局域网中最重要 最基本的网络服务功能是 文件服务</code></pre>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
     </div>
