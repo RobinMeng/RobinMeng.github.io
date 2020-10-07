@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>个人思考 | Heisenberg</title>
+  <title>数据链路层 | Heisenberg</title>
 
   
-    <meta name="keywords" content="吐槽,Java,语言,c,java,c++,unix">
+    <meta name="keywords" content="c,java,c++,unix">
     
 
   
-  <meta name="description" content="个人思考 | Heisenberg">
+  <meta name="description" content="数据链路层 | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="PEACE &amp; LOVE">
 <meta property="og:type" content="website">
@@ -455,41 +455,24 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-think" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-wlyl-sjllc" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">个人思考</h1>
+        <h1 class="article-title">数据链路层</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="吐槽">吐槽</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color3">吐槽</a>
-            
-            <a class="color5">JAVA</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-08-20 22:20:26'>2020-08-20 21:37</time>
+            Created At : <time class="date" title='Updated At: 2020-10-07 14:39:26'>2020-10-07 14:11</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:398</span>
+        <span>Count:778</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -508,7 +491,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2020年8月"><span class="toc-text">2020年8月</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据链路层"><span class="toc-text">数据链路层</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HDLC协议的特点"><span class="toc-text">HDLC协议的特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#回退N-策略基本原理"><span class="toc-text">回退N 策略基本原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#差错检测的两个任务"><span class="toc-text">差错检测的两个任务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简述HDLC-包含的三种不同类型的帧及作用"><span class="toc-text">简述HDLC 包含的三种不同类型的帧及作用</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -524,24 +507,95 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="2020年8月"><a href="#2020年8月" class="headerlink" title="2020年8月"></a>2020年8月</h2><blockquote>
-<p>从北京回老家也有快三个月了，感受就是北京不仅拥有一流的教育资源，医疗资源，行政能力也是一流的！这就是在大城市呆的好处。事情件件有回音，干净利索。等把自己的事情全部处理完毕后，还打算回去，或者去上海或者深圳！我的感想是大城市能提供给你的不仅仅是看得到的，还有许多你看不到的，都有一批最聪明的人帮你解决了！！</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>以前总是觉得忙，时间不够，心累 无力气 下班就想躺床上休息! 除了工作和感兴趣的，不在乎这个 不在乎哪个，除了工作 生活上一地鸡毛</p>
-<p>现在想明白了</p>
+        <h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p><strong>数据链路层的知识图谱</strong></p>
 <ol>
-<li>自己懒惰</li>
-<li>事情管理的方式不对</li>
-<li>有捷径可走为啥我总是辛辛苦苦的重走一边荆棘路呢，人和动物最大区别是会使用工具🔧，而我这个工具使用的不是很好</li>
+<li>数据链路层的功能<ol>
+<li>数据链路层功能<ol>
+<li>帧同步</li>
+<li>差错控制</li>
+<li>流量控制</li>
+<li>链路管理</li>
 </ol>
-</blockquote>
+</li>
+<li>帧同步功能<ol>
+<li>字符填充</li>
+<li>比特填充</li>
+<li>违法编码</li>
+<li>字节计数</li>
+</ol>
+</li>
+<li>差错控制<ol>
+<li>反馈重发</li>
+<li>超时计时器</li>
+<li>帧编号</li>
+</ol>
+</li>
+<li>流量控制<ol>
+<li>停止等待</li>
+<li>滑动窗口</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>数据链路层的控制<ol>
+<li>差错控制<ol>
+<li>随机热噪声引起的随机错和冲击噪声引起的突发错</li>
+<li>奇偶校验算法</li>
+<li>循环冗余算法</li>
+<li>生成多项式</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>基本数据链路协议<ol>
+<li>停等协议</li>
+<li>顺序接收管道协议</li>
+<li>选择重传协议</li>
+</ol>
+</li>
+<li>链路控制规程<ol>
+<li>面向字符的同步控制协议</li>
+<li>面向比特的同步控制协议</li>
+</ol>
+</li>
+<li>因特网数据链层协议<ol>
+<li>SLIP协议</li>
+<li>PPP协议</li>
+</ol>
+</li>
+</ol>
 <hr>
-<blockquote>
-<p>自从学会了九阳神功后，越发的觉得java这门语言的优势是无论你是谁，都不会写出破底线的代码！各种检查机制很是完善！</p>
-<p>但你也写不出什么高性能代码，它就像老太太的裹脚布，加入了各种作者的小心思，还不是主流看法的小心思！美其名曰特性！管中窥豹的学习着这些非主流的小心思.在Java界仿佛只有这一种解决方案了！</p>
-</blockquote>
+<ol>
+<li>差错控制编码可以分为 检错码 和 纠错码</li>
+<li>热噪声 引起差错称为随机错</li>
+<li>BSC协议将在链路上传输的信息分为 数据报文 和 监控报文</li>
+<li>链路管理功能包括数据链路层连接的 建立 维持 和 释放</li>
+<li>数据链路层通过使用 计数器 和 序号 来保证每帧最终都能被正确的送给目标网络层</li>
+<li>违法编码法 不需要人和的填充技术，便能实现数据的透明性 但他只适用于采用冗余编码的特殊编码环境</li>
+<li>为了使传输中发生差错后 只将出错的有限数据进行重发，数据链路层将比特流组成 帧 为单位传递</li>
+<li>使用字符填充的首尾定界符法是在与特定的字符相同的数据字符填充一个转译控制字符 已示区别，从而达到数据的透明性</li>
+<li>目前普遍使用帧同步的方法是 比特填充法 和 违法编码法</li>
+<li>HDLC 是通用的数据链路层控制协议，在开始建立数据链路时，允许选用的特点是 操作控制</li>
+</ol>
+<h2 id="HDLC协议的特点"><a href="#HDLC协议的特点" class="headerlink" title="HDLC协议的特点"></a>HDLC协议的特点</h2><ol>
+<li>协议不依赖任何一种字符编码</li>
+<li>数据报文可透明传输，用于实现透明传输的 0 比特插入法 易于硬件实现</li>
+<li>全双工通信，不必等待确认便可连续发送数据，有较高的数据链路传输效率</li>
+<li>所有帧采用CRC校验，对信息进行顺序编号，可防止漏收或重发，传输可靠性高</li>
+<li>传输控制功能与处理功能分离，具有较大的灵活性</li>
+</ol>
+<h2 id="回退N-策略基本原理"><a href="#回退N-策略基本原理" class="headerlink" title="回退N 策略基本原理"></a>回退N 策略基本原理</h2><ol>
+<li>当接收方检测出失序信息帧后，要求发送方重发一个正确接收的信息帧之后的所有未被确认的帧</li>
+</ol>
+<h2 id="差错检测的两个任务"><a href="#差错检测的两个任务" class="headerlink" title="差错检测的两个任务"></a>差错检测的两个任务</h2><ol>
+<li>差错编码 </li>
+<li>差错校验</li>
+</ol>
+<h2 id="简述HDLC-包含的三种不同类型的帧及作用"><a href="#简述HDLC-包含的三种不同类型的帧及作用" class="headerlink" title="简述HDLC 包含的三种不同类型的帧及作用"></a>简述HDLC 包含的三种不同类型的帧及作用</h2><ol>
+<li>信息帧 – 传递信息或数据</li>
+<li>监控帧 – 差错控制和流量控制</li>
+<li>无编号帧 – 提供对链路建立 拆错等多种功能</li>
+</ol>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
