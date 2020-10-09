@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2019ncov | Heisenberg</title>
+  <title>网络体系结构 | Heisenberg</title>
 
   
-    <meta name="keywords" content="2019ncov,c,java,c++,unix">
+    <meta name="keywords" content="c,java,c++,unix">
     
 
   
-  <meta name="description" content="2019ncov | Heisenberg">
+  <meta name="description" content="网络体系结构 | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="PEACE &amp; LOVE">
 <meta property="og:type" content="website">
@@ -471,32 +471,24 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2019ncov" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-wlyl-txjg" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2019ncov</h1>
+        <h1 class="article-title">网络体系结构</h1>
     
     <div class="article-meta">
         
         
-        
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="民间小史">民间小史</a>
-            
-        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-08-20 11:09:48'>2020-04-04 15:43</time>
+            Created At : <time class="date" title='Updated At: 2020-10-09 11:03:03'>2020-10-09 10:52</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:193</span>
+        <span>Count:352</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -515,7 +507,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2019ncov"><span class="toc-text">2019ncov</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机层次化体系结构的特点"><span class="toc-text">计算机层次化体系结构的特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#协议三要素"><span class="toc-text">协议三要素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ISO在制定OSI-RM-对层次划分遵循的原则"><span class="toc-text">ISO在制定OSI&#x2F;RM 对层次划分遵循的原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OSI-RM-数据传输的过程"><span class="toc-text">OSI&#x2F;RM 数据传输的过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OSI-RM-与TCP-IP-的异同点"><span class="toc-text">OSI&#x2F;RM 与TCP&#x2F;IP 的异同点</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -531,9 +523,44 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="2019ncov"><a href="#2019ncov" class="headerlink" title="2019ncov"></a>2019ncov</h1><p><strong>2019ncov</strong>,学名 新型冠状病毒。2019年末发现于武汉，尚且不知何因。第三批专家调研结束后<br>政府下令封城以杜绝病毒传播，免费医疗杜绝百姓后顾之忧。随后各个省份派医疗队和物资前往武汉支援，<br>于3月底结束战斗，逐步撤出武汉。后世界爆发，韩国，日本控制的好，意大利 美国严重，英国选择群体免疫。<br>中国给予世界加倍援助。因病毒死亡中国人数3000 偏左。</p>
-<hr>
-<p>小史公评:<br>民间因手持 居民身份证，护照而炫富。<br>医护人员回家乡享最高礼节和荣誉。<br>网上武汉加油,湖北加油，现实行走较为艰辛。</p>
+        <ol>
+<li>分层 是系统分解的最好方法之一</li>
+<li>通信服务分为两大类 分别是 面向连接服务 和 无连接服务</li>
+<li>TCP/IP 协议是基于ARPANET 互联网开发的</li>
+<li>网络协议是为计算机网络中进行数据交换而建立的规则 标准 或 约定集合</li>
+</ol>
+<h2 id="计算机层次化体系结构的特点"><a href="#计算机层次化体系结构的特点" class="headerlink" title="计算机层次化体系结构的特点"></a>计算机层次化体系结构的特点</h2><ol>
+<li>除了物理介质实通信外 其余对等协议之间都是虚通信</li>
+<li>对等层的虚通信必须遵守该层协议</li>
+<li>n层的虚拟通信 是通过 n/n-1层接口出 n-1层提供的服务及通信来实现</li>
+</ol>
+<h2 id="协议三要素"><a href="#协议三要素" class="headerlink" title="协议三要素"></a>协议三要素</h2><ol>
+<li>语法</li>
+<li>语义</li>
+<li>定时</li>
+</ol>
+<h2 id="ISO在制定OSI-RM-对层次划分遵循的原则"><a href="#ISO在制定OSI-RM-对层次划分遵循的原则" class="headerlink" title="ISO在制定OSI/RM 对层次划分遵循的原则"></a>ISO在制定OSI/RM 对层次划分遵循的原则</h2><ol>
+<li>每层功能应明确 并且相互独立</li>
+<li>层间接口必须清晰 跨越接口的信息应尽可能少</li>
+<li>层数应适中</li>
+</ol>
+<h2 id="OSI-RM-数据传输的过程"><a href="#OSI-RM-数据传输的过程" class="headerlink" title="OSI/RM 数据传输的过程"></a>OSI/RM 数据传输的过程</h2><ol>
+<li>发送进程发送给接收进程的数据 实际上经过发送方各层从上到下传递到物理介质</li>
+<li>通过物理介质传输到接收方后 在经过从下到上各层传递 最后到达接收进程</li>
+</ol>
+<h2 id="OSI-RM-与TCP-IP-的异同点"><a href="#OSI-RM-与TCP-IP-的异同点" class="headerlink" title="OSI/RM 与TCP/IP 的异同点"></a>OSI/RM 与TCP/IP 的异同点</h2><ol>
+<li>相同<ol>
+<li>协议栈为基础</li>
+<li>彼此协议独立</li>
+<li>分层</li>
+</ol>
+</li>
+<li>不同<ol>
+<li>OSI 七层 TCP 四层</li>
+<li>无连接和面向连接通信范围不同</li>
+</ol>
+</li>
+</ol>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
