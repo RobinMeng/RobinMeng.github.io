@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://robinmeng.github.io/2020/10/09/xtjg-4/</loc>
+    
+    <lastmod>2020-10-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/2020/10/09/xtjg-3/</loc>
     
     <lastmod>2020-10-10</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://robinmeng.github.io/2020/10/09/xtjg-2/</loc>
-    
-    <lastmod>2020-10-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/2020/10/09/xtjg-4/</loc>
     
     <lastmod>2020-10-10</lastmod>
     
@@ -207,13 +207,6 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/tags/%E6%9C%8D%E8%A3%85%E6%90%AD%E9%85%8D/</loc>
-    <lastmod>2020-10-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://robinmeng.github.io/tags/%E7%BB%93%E6%9E%84%E5%9E%8B/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
@@ -221,7 +214,21 @@
   </url>
   
   <url>
+    <loc>https://robinmeng.github.io/tags/%E6%9C%8D%E8%A3%85%E6%90%AD%E9%85%8D/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/tags/error-coding/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robinmeng.github.io/tags/C-C/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -236,13 +243,6 @@
   
   <url>
     <loc>https://robinmeng.github.io/tags/%E5%B1%80%E5%9F%9F%E7%BD%91/</loc>
-    <lastmod>2020-10-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/tags/C-C/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,6 +270,13 @@
   </url>
   
   <url>
+    <loc>https://robinmeng.github.io/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
+    <lastmod>2020-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/tags/%E5%90%90%E6%A7%BD/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
@@ -278,13 +285,6 @@
   
   <url>
     <loc>https://robinmeng.github.io/tags/JAVA/</loc>
-    <lastmod>2020-10-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -314,14 +314,14 @@
 
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <loc>https://robinmeng.github.io/categories/%E6%B0%91%E9%97%B4%E5%B0%8F%E5%8F%B2/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E6%B0%91%E9%97%B4%E5%B0%8F%E5%8F%B2/</loc>
+    <loc>https://robinmeng.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -342,14 +342,14 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</loc>
+    <loc>https://robinmeng.github.io/categories/mini/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/mini/</loc>
+    <loc>https://robinmeng.github.io/categories/%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2020-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
