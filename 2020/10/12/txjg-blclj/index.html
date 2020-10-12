@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>物理层 | Heisenberg</title>
+  <title>标量处理机 | Heisenberg</title>
 
   
     <meta name="keywords" content="c,java,c++,unix">
     
 
   
-  <meta name="description" content="物理层 | Heisenberg">
+  <meta name="description" content="标量处理机 | Heisenberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="404">
 <meta property="og:type" content="website">
@@ -535,9 +535,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-wlyl-wlc-1" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-txjg-blclj" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">物理层</h1>
+        <h1 class="article-title">标量处理机</h1>
     
     <div class="article-meta">
         
@@ -547,7 +547,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="网络原理">网络原理</a>
+            <a  data-rel="体系结构">体系结构</a>
             
         </span>
         
@@ -555,12 +555,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-10-09 21:30:26'>2020-10-09 10:29</time>
+            Created At : <time class="date" title='Updated At: 2020-10-12 22:04:21'>2020-10-12 21:18</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:604</span>
+        <span>Count:944</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -579,7 +579,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述RS-232C电气特性"><span class="toc-text">简述RS-232C电气特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简述信道容量-数据传输速率的含义区别"><span class="toc-text">简述信道容量 数据传输速率的含义区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#信号数字化的转化过程"><span class="toc-text">信号数字化的转化过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简述传输线路存在的问题"><span class="toc-text">简述传输线路存在的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#带宽-波特率-码元-位传输率的含义"><span class="toc-text">带宽 波特率 码元 位传输率的含义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#电路交换的优缺点"><span class="toc-text">电路交换的优缺点</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#标量处理机"><span class="toc-text">标量处理机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#顺序方式"><span class="toc-text">顺序方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重叠解释"><span class="toc-text">重叠解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一次重叠的含义"><span class="toc-text">一次重叠的含义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#流水向上扩展的含义"><span class="toc-text">流水向上扩展的含义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#流水向下扩展的含义"><span class="toc-text">流水向下扩展的含义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#静态流水线"><span class="toc-text">静态流水线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动态流水线"><span class="toc-text">动态流水线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同步流水线"><span class="toc-text">同步流水线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#异步流水线"><span class="toc-text">异步流水线</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -595,50 +595,59 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li>物理层 主要功能是实现比特流的透明传输，为数据链路层提供数据传输服务</li>
-<li>在物理层中 DCE 指的是数据电路终接设备或 数据通信设备，是对为用户提供入网连接点的网络设备的总称</li>
-<li>DTE 与DCE 信号速率最大可达 300kbps</li>
-<li>RS-232C的电器特性规定 逻辑1 的电平为 -15 到-5</li>
-<li>双绞线可分为两种 无屏蔽双绞线 和 屏蔽双绞线</li>
-<li>在计算机通信网络中，广泛采取同步方法有 位同步 和 群同步</li>
-<li>实现位同步的方法可分为 外同步 和 自同步</li>
-<li>对模拟数据进行数字编码的最常用方法是 脉码调制</li>
-<li>ITU 与DTE 与DCE之间的接口标准有 V 系列 和 X 系列</li>
-<li>电路交换技术完成数据传输需要经过 电路建立 数据传输 电路拆除 三个过程</li>
-<li>ADSL将本地回路上可提供使用的频谱分成 POTS 上行数据流 下行数据流</li>
-</ol>
-<h2 id="简述RS-232C电气特性"><a href="#简述RS-232C电气特性" class="headerlink" title="简述RS-232C电气特性"></a>简述RS-232C电气特性</h2><ol>
-<li>规定逻辑1电平为 -15 至 -5 </li>
-<li>逻辑0电平为+5 到 +15 </li>
-<li>+-5之间不做定义</li>
-</ol>
-<h2 id="简述信道容量-数据传输速率的含义区别"><a href="#简述信道容量-数据传输速率的含义区别" class="headerlink" title="简述信道容量 数据传输速率的含义区别"></a>简述信道容量 数据传输速率的含义区别</h2><ol>
-<li>信道容量表征一个信道传输数据的能力 单位是 bps</li>
-<li>数据传输速率指美妙传输二进制位数的能力 单位是bps</li>
-<li>区别 信道最大传输速率是信道传输数据最大的极限，数据穿出速率是实际传输的速率</li>
-</ol>
-<h2 id="信号数字化的转化过程"><a href="#信号数字化的转化过程" class="headerlink" title="信号数字化的转化过程"></a>信号数字化的转化过程</h2><ol>
-<li>采样 量化 编码</li>
-</ol>
-<h2 id="简述传输线路存在的问题"><a href="#简述传输线路存在的问题" class="headerlink" title="简述传输线路存在的问题"></a>简述传输线路存在的问题</h2><ol>
-<li>衰减</li>
-<li>延迟畸变</li>
-<li>噪声</li>
-</ol>
-<h2 id="带宽-波特率-码元-位传输率的含义"><a href="#带宽-波特率-码元-位传输率的含义" class="headerlink" title="带宽 波特率 码元 位传输率的含义"></a>带宽 波特率 码元 位传输率的含义</h2><ol>
-<li>带宽指的是最小衰减情况下通过这种介质的频率番位</li>
-<li>波特率 每秒采样次数，每个采样发送一份信息 称为 码元</li>
-<li>位传输速率 一条信道上发送的信息数量，等于每秒采样次数 X 每个采样位数</li>
-</ol>
-<h2 id="电路交换的优缺点"><a href="#电路交换的优缺点" class="headerlink" title="电路交换的优缺点"></a>电路交换的优缺点</h2><ol>
-<li>数据传输可靠，迅速 数据不会丢失且保持原来的序列</li>
-<li>缺点<ol>
-<li>某些情况下 电路空闲时信道浪费</li>
-<li>数据传输阶段持续时间不长，电路建立和拆除所用时间得不偿失</li>
+        <h1 id="标量处理机"><a href="#标量处理机" class="headerlink" title="标量处理机"></a>标量处理机</h1><p><strong>知识图谱</strong></p>
+<ol>
+<li>重叠方式<ol>
+<li>顺序方式和重叠方式定义和特点</li>
+<li>重叠方式解决访存冲突的办法</li>
+<li>一次重叠定义和好处</li>
+<li>条件转移指令和后续指令之间的相关和处理方法</li>
+<li>指令相关 数据相关 通用寄存器相关定义及处理办法 </li>
+<li>设置专用通路的作用</li>
+<li>指令间微操作重叠时间关系 计算执行若干条指令所需的时间</li>
 </ol>
 </li>
+<li>流水方式<ol>
+<li>流水的重叠引申</li>
+<li>流水的向上扩展</li>
+<li>流水的向下扩展</li>
+<li>指令级 处理机级 系统级流水的定义</li>
+<li>单功能 多功能 静态 动态 线性 非线性 标量 向量流水的定义</li>
+<li>消除流水线速度性能瓶颈的办法 </li>
+<li>时空图，吞吐率 效率 加速比计算</li>
+<li>同步流动 异步流动 的定义</li>
+<li>计算机综述局部性相关的处理办法</li>
+<li>中断的处理办法</li>
+<li>计算吞吐率 效率 和 加速比</li>
+<li>单功能非线性流水线调度方案</li>
 </ol>
+</li>
+<li>指令高度并行的超级处理机</li>
+</ol>
+<hr>
+<ol>
+<li>解释一条机器指令的操作可归并为 取指 分析 和  执行</li>
+<li>机器语言程中 临近指令之间出现了关联 未防止出错让他们不能同时解释的现象称为发生了 相关</li>
+<li>指令相关是因为机器指令 允许修改 而引起的</li>
+<li>主存空间数相关指相邻两条指令之间出现了对主存 同一 单元要求先写而后读的关联</li>
+<li>通用寄存器组相关有 操作数相关 基址/变化 相关</li>
+<li>通用寄存器组相关有 推后分析 和 设置相关的专用通路 两种解决办法</li>
+<li>流水线按处理机的级别分为 部件级别 处理机级别 系统级</li>
+<li>流水线满负荷每隔t流出一个结果时所达到的吞吐率为 最大吞吐率</li>
+<li>从计算机所具有的数据表示角度 可以把流水线处理机分为 标量流水记 和 向量流水机</li>
+<li>流水线经过时间最长的子过程称为  瓶颈子过程</li>
+<li>线性流水线加速比最大值等于 流水线的总段数</li>
+<li>同一单元在先的指令先写入 在后的指令才写入的关联为 写-写相关，对同一单元要求在先的指令先读，在后的指令才写入的相关为 先读后写 相关</li>
+</ol>
+<h2 id="顺序方式"><a href="#顺序方式" class="headerlink" title="顺序方式"></a>顺序方式</h2><p>指令之间顺序串行的执行</p>
+<h2 id="重叠解释"><a href="#重叠解释" class="headerlink" title="重叠解释"></a>重叠解释</h2><p>在解释第K条指令的操作完成之前，就可以开始解释第k+1条指令</p>
+<h2 id="一次重叠的含义"><a href="#一次重叠的含义" class="headerlink" title="一次重叠的含义"></a>一次重叠的含义</h2><p>任何时候都是 执行k 和 分析 k+1 的重叠</p>
+<h2 id="流水向上扩展的含义"><a href="#流水向上扩展的含义" class="headerlink" title="流水向上扩展的含义"></a>流水向上扩展的含义</h2><p>多个处理机串行的对数据集处理，处理机专门完成其中的一个任务</p>
+<h2 id="流水向下扩展的含义"><a href="#流水向下扩展的含义" class="headerlink" title="流水向下扩展的含义"></a>流水向下扩展的含义</h2><p>把子过程进一步的细化，让每个子过程经过的时间都相等程度的较少，吞吐率进一步的提高</p>
+<h2 id="静态流水线"><a href="#静态流水线" class="headerlink" title="静态流水线"></a>静态流水线</h2><p>静态流水线在某一时间段内 各段只能按照一种功能连接流水，只有等流水线全部流空后 才能切换按另一种功能连接流水</p>
+<h2 id="动态流水线"><a href="#动态流水线" class="headerlink" title="动态流水线"></a>动态流水线</h2><p>动态流水线的各功能段在同一时间段内可按照不同运算或功能连接</p>
+<h2 id="同步流水线"><a href="#同步流水线" class="headerlink" title="同步流水线"></a>同步流水线</h2><p>任务流出流水线的顺序保持和流入流水线的顺序一致</p>
+<h2 id="异步流水线"><a href="#异步流水线" class="headerlink" title="异步流水线"></a>异步流水线</h2><p>任务流出流水线的顺序与流入流水线的顺序可不一致</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以邮件至 robinmeng2015@gmail.com </span>
