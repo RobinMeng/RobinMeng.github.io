@@ -333,21 +333,7 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/tags/C-C/</loc>
-    <lastmod>2020-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://robinmeng.github.io/tags/%E5%AE%9E%E7%94%A8/</loc>
-    <lastmod>2020-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://robinmeng.github.io/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -368,7 +354,21 @@
   </url>
   
   <url>
+    <loc>https://robinmeng.github.io/tags/C-C/</loc>
+    <lastmod>2020-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://robinmeng.github.io/tags/%E4%BC%A0%E8%BE%93/</loc>
+    <lastmod>2020-10-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://robinmeng.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B1%82/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,7 +382,7 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/tags/%E7%BD%91%E7%BB%9C%E5%B1%82/</loc>
+    <loc>https://robinmeng.github.io/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -391,14 +391,14 @@
 
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <loc>https://robinmeng.github.io/categories/%E6%B0%91%E9%97%B4%E5%B0%8F%E5%8F%B2/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E6%B0%91%E9%97%B4%E5%B0%8F%E5%8F%B2/</loc>
+    <loc>https://robinmeng.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -440,14 +440,14 @@
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/mini/</loc>
+    <loc>https://robinmeng.github.io/categories/%E5%90%90%E6%A7%BD/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://robinmeng.github.io/categories/%E5%90%90%E6%A7%BD/</loc>
+    <loc>https://robinmeng.github.io/categories/mini/</loc>
     <lastmod>2020-10-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
